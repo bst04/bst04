@@ -1,5 +1,5 @@
 # Hey there 👋, I'm brunoooost!
-
+![](https://komarev.com/ghpvc/?username=brunoooost)
 
 Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student with a love for cybersecurity. This README is a little overview of who I am and what I do.
 - 🗣️ Im a **17-years-old** IT student from Spain.
