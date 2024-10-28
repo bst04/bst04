@@ -21,4 +21,4 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 [![My Skills](https://skillicons.dev/icons?i=py,html,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
 
 #
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=brunoooost&hide=contribs&show_icons=true&theme=dark)
+![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
