@@ -22,4 +22,3 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 
 #
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=brunoooost&hide=contribs&show_icons=true&theme=dark)
-![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=brunoooost&theme=dark&hide_border=true)
