@@ -13,8 +13,8 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 ## Repos 📁
 |Repository|Description|Language|
 |--|-------------------|--|
-|[FlipZero Payloads](https://github.com/brunoooost/payloads_flipperZero)|A recopilation of some payloads for Flipper Zero with BadKB. |DuckyScript™ 1.0|
-|[Hak5 Payloads](https://github.com/brunoooost/hak5_payloads)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3.0|
+|[FlipZero Payloads](https://github.com/brunoooost/payloads_flipperZero)|A recopilation of some payloads for Flipper Zero with BadKB. |DuckyScript™ 1|
+|[Hak5 Payloads](https://github.com/brunoooost/hak5_payloads)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[redprotect-website](https://github.com/brunoooost/info.redprotect)|The website of RedProtect Community (simple). |HTML|
 |[password-generator](https://github.com/brunoooost/password-generator)|A simple password generator. |Python|
 
