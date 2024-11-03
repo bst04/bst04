@@ -9,6 +9,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 ## Projects 🗂️
 - Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
 - Doing payloads with BadUSB for Flipper Zero and Hak5.
+- HackTheBox - CTF 
   
 ## Repos 📁
 |Repository|Description|Language|
