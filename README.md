@@ -17,7 +17,6 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |[Hak5 Payloads](https://github.com/brunoooost/hak5_payloads)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[redprotect-website](https://github.com/brunoooost/info.redprotect)|The website of RedProtect Community (simple). |HTML|
 |[password-generator](https://github.com/brunoooost/password-generator)|A simple password generator. |Python|
-|[Pong Game]()|Pong is a game written in Python using the PyGame library.|Python|
 
 ## Languages 💾
 [![My Skills](https://skillicons.dev/icons?i=py,html,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
