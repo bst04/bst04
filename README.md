@@ -30,7 +30,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 <details>
 <summary>📈 Stats</summary>
 <br>
-My Github Stats
+
 
 ![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
 
