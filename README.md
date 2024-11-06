@@ -27,4 +27,9 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |Signal|[brunoooost.04](https://signal.me/#eu/YiH6rZq86ipsfPShqXmtjw-kE6ATHrvE_sKfofhKNCuOry3YQEhHXInFqhMWLZqo)|
 |UID|brunoooost@proton.me|
 #
+<details>
+<summary>📈 Stats</summary>
+<br>
 ![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
+<br>
+
