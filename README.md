@@ -33,6 +33,8 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 
 
 ![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
+![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=brunoooost&theme=vdark&hide_border=true)
+
 
 <br>
 
