@@ -1,6 +1,8 @@
 # Hey there 👋, I'm brunoooost!
 ![](https://komarev.com/ghpvc/?username=brunoooost&label=views)
 
+
+
 Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student with a love for cybersecurity. This README is a little overview of who I am and what I do.
 - 🗣️ Im a **17-years-old** IT student from Spain.
 - 👨‍💻 Enthusiast about the cyber world - Pentesting Path.
@@ -36,7 +38,8 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 
 ![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
 ![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=brunoooost&theme=vdark&hide_border=true)
-
+<img src="https://img.shields.io/github/stars/brunoooost?style=for-the-badge"/>
+<img src="https://img.shields.io/github/followers/brunoooost?style=for-the-badge"/>
 
 <br>
 
