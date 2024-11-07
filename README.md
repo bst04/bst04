@@ -11,7 +11,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 ## Projects 🗂️
 - Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
 - Doing payloads with BadUSB for Flipper Zero and Hak5.
-- Exploring some Python projects
+- Updating [**cybersource**](https://github.com/brunoooost/cybersources), a repo of cyber resources.
 
 ## Repos 📁
 |Repository|Description|Language|
