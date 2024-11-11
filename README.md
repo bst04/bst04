@@ -23,7 +23,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |[Cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
 
 ## Languages 💾
-[![My Skills](https://skillicons.dev/icons?i=py,html,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
 
 ## Contact Me 💬
 |PGP|Data|
