@@ -1,0 +1,257 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #34344a);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 900px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+  
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+header h1 .highlighted-text {
+  
+    color: #ff8c42;
+}
+
+header p.subtitle {
+    font-size: 1.2rem;
+    color: #b5b5b5;
+}
+
+/* Social Links */
+.social-links {
+    margin: 20px 0 40px;
+}
+
+.social-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #f1f1f1;
+    font-size: 1.7rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: #ff8c42;
+}
+
+/* About Section */
+.about p {
+  
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ff8c42; /* safari still uses vendor prefix */
+  text-decoration-color: #ff8c42;
+  margin-bottom: 20px;
+}
+
+/* Tech Stack */
+.tech-stack {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center;
+    color: #fff; /* Text color set to white */
+}
+
+.tech-stack h2 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+   -webkit-text-decoration-color: #ff8c42; /* safari still uses vendor prefix */
+    text-decoration-color: #ff8c42;
+    margin-bottom: 20px;
+    color: #fff; /* Make the title stand out with an orange color */
+}
+
+.tech-stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    width: 100%; /* Ensure the grid takes up the full width of its parent */
+    max-width: 960px; /* Optional: Set a max-width to prevent it from becoming too wide */
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tech-icon {
+    font-size: 2.5rem; /* Increased icon size for better visibility */
+    color: #ff8c42; /* Orange icon color */
+    margin-bottom: 10px;
+}
+
+.tech-item span {
+    display: block;
+    color: #fff; /* Text color set to white */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Tooltip */
+.tech-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-item:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .tech-stack-grid {
+        gap: 15px;
+    }
+
+    .tech-icon {
+        font-size: 2rem; /* Smaller icon size on mobile */
+    }
+
+    .tech-item {
+        padding: 12px; /* Reduce padding for mobile */
+    }
+}
+
+
+
+
+
+/* Contact Section */
+.contact {
+    margin-top: 50px;
+  
+}
+
+.contact p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact h2 {
+    text-decoration: underline;
+  -webkit-text-decoration-color: #ff8c42; /* safari still uses vendor prefix */
+  text-decoration-color: #ff8c42;
+  margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff8c42;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #ff7a29;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p.subtitle {
+        font-size: 1rem;
+    }
+
+    .social-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
