@@ -203,6 +203,16 @@ header p.subtitle {
     margin-bottom: 20px;
 }
 
+.btn1 {
+    color:  #ff8c42;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 .btn:hover {
     background-color: #ff7a29;
 }
