@@ -1,176 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brunoooost's GitHub Profile</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #228B22;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            background: #fff;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #228B22;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        th {
-            background: #f4f4f4;
-        }
-        a {
-            color: #228B22;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .skills img {
-            margin: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #228B22;
-            color: #fff;
-        }
-        details summary {
-            cursor: pointer;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>my little portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="fade-in">
+            <h1>👋 Hello, I'm <span class="highlighted-text">bst04</span></h1>
+            <p class="subtitle">Cybersecurity Enthusiast | Developer | Brand Ambassador of Kookaburra</p>
+        </header>
 
-<header>
-    <div class="container">
-        <h1>Hey there 👋, I'm brunoooost!</h1>
-    </div>
-</header>
+        <!-- Social Links Section -->
+        <nav class="social-links">
+            <ul>
+                <li><a href="https://github.com/brunoooost" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bruno-salvatella-teichman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                
+            </ul>
+        </nav>
 
-<section class="container">
-    <p>Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student with a love for cybersecurity. This README is a little overview of who I am and what I do.</p>
-    <ul>
-        <li>🗣️ I'm a <strong>17-years-old</strong> IT student from Spain.</li>
-        <li>👨‍💻 Enthusiast about the cyber world - Pentesting Path.</li>
-        <li>🛡️ <strong>RedProtect</strong> - Cyber Community.</li>
-    </ul>
-</section>
+        <!-- About Me Section -->
+        <section class="about fade-in">
+            <h2>About Me</h2>
+            <p>A 17-year-old with a passion for cybersecurity and programming. I love diving into the intricacies of digital security and coding. You cand find my projects on my Github.</p>
+        </section>
 
-<section id="projects" class="container">
-    <h2>Projects 🗂️</h2>
-    <ul>
-        <li>Working in <a href="https://info-redprotect.vercel.app"><strong>RedProtect</strong></a> Community.</li>
-        <li>Doing payloads with BadUSB for Flipper Zero and Hak5.</li>
-        <li>Updating <a href="https://github.com/brunoooost/cybersources"><strong>cybersources</strong></a>, a repo of cyber resources.</li>
-    </ul>
-</section>
-
-<section id="repos" class="container">
-    <h2>Repos 📁</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Repository</th>
-                <th>Description</th>
-                <th>Language</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="https://github.com/brunoooost/payloads_flipperZero">FlipZero Payloads</a></td>
-                <td>A recopilation of some payloads for Flipper Zero with BadKB.</td>
-                <td>DuckyScript™ 1</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/brunoooost/hak5_payloads">Hak5 Payloads</a></td>
-                <td>USB Rubber Ducky - Payloads recopilation.</td>
-                <td>DuckyScript™ 3</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/brunoooost/info.redprotect">RedProtect-website</a></td>
-                <td>The website of RedProtect Community (simple).</td>
-                <td>HTML</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/brunoooost/python-projects/tree/main">Python-Projects</a></td>
-                <td>Recopilation of projects that I made.</td>
-                <td>Python</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/brunoooost/cybersources">Cybersources</a></td>
-                <td>Tools, Resources and Learning for cybersecurity path.</td>
-                <td>README.md</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<section id="languages" class="container">
-    <h2>Languages 💾</h2>
-    <div class="skills">
-        <a href="https://skillicons.dev">
-            <img src="https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino" alt="My Skills">
-        </a>
+        <!-- Tech Stack Section -->
+<section class="tech-stack">
+    <h2>Tech Stack</h2>
+    <div class="tech-stack-grid">
+        <div class="tech-item" data-tooltip="HTML5">
+            <i class="fab fa-html5 tech-icon"></i>
+            <span>HTML5</span>
+        </div>
+        <div class="tech-item" data-tooltip="CSS3">
+            <i class="fab fa-css3-alt tech-icon"></i>
+            <span>CSS3</span>
+        </div>
+        <div class="tech-item" data-tooltip="Python">
+            <i class="fab fa-python tech-icon"></i>
+            <span>Python</span>
+        </div>
+        <div class="tech-item" data-tooltip="C#">
+            <i class="fab fa-cuttlefish tech-icon"></i>
+            <span>C#</span>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="container">
-    <h2>Contact Me 💬</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PGP</th>
-                <th>Data</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Signal</td>
-                <td><a href="https://signal.me/#eu/YiH6rZq86ipsfPShqXmtjw-kE6ATHrvE_sKfofhKNCuOry3YQEhHXInFqhMWLZqo">brunoooost.04</a></td>
-            </tr>
-            <tr>
-                <td>UID</td>
-                <td>brunoooost@proton.me</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+
+        <!-- Contact Section -->
+        <section class="contact fade-in">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you have any questions, collaborations, or just want to connect!</p>
+            <a href="mailto:brunoooost@example.com" class="btn">Say Hello</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
 
 
-
+    <script src="script.js"></script>
 </body>
+
 </html>
