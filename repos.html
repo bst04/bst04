@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Repositories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1f2e, #34344a);
+            color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 30px;
+            color: #ff8c42;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #b5b5b5;
+            margin-top: 10px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            border: 2px solid #ff8c42;
+            outline: none;
+            background-color: #2b2b3d;
+            color: #fff;
+        }
+
+        .search-bar input::placeholder {
+            color: #b5b5b5;
+        }
+
+        .repo-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .repo-item {
+            background: #2b2b3d;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+        }
+
+        .repo-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+        }
+
+        .repo-item a {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ff8c42;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .repo-item a:hover {
+            color: #ff7a29;
+        }
+
+        .repo-item p {
+            font-size: 1rem;
+            color: #b5b5b5;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .repo-item .repo-stars {
+            font-size: 1.2rem;
+            color: #f39c12;
+        }
+
+        .repo-item .repo-language {
+            font-size: 1.1rem;
+            color: #16a085;
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-toggle {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff8c42;
+            color: #fff;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #ff7a29;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #b5b5b5;
+            margin-top: 50px;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        body.dark-mode .repo-item {
+            background: #34495e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode .repo-item a {
+            color: #1abc9c;
+        }
+
+        body.dark-mode .repo-item .repo-stars {
+            color: #f39c12;
+        }
+
+        body.dark-mode footer {
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub Repositories</h1>
+    <p>Explore my repositories on GitHub.</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search repositories..." oninput="filterRepos()">
+    </div>
+
+    <!-- Dark Mode Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+    <div class="repo-list" id="repoList"></div>
+
+    <footer>
+        <p>Powered by GitHub API | Designed by bst04</p>
+    </footer>
+
+    <script>
+        const username = "brunoooost";
+        let repositories = [];
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function filterRepos() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const filteredRepos = repositories.filter(repo => {
+                return (
+                    repo.name.toLowerCase().includes(query) ||
+                    (repo.description && repo.description.toLowerCase().includes(query))
+                );
+            });
+            displayRepos(filteredRepos);
+        }
+
+        function displayRepos(repos) {
+            const repoList = document.getElementById('repoList');
+            repoList.innerHTML = '';
+            if (repos.length === 0) {
+                repoList.innerHTML = '<p>No repositories found.</p>';
+            } else {
+                repos.forEach(repo => {
+                    const listItem = document.createElement('div');
+                    listItem.classList.add('repo-item');
+                    listItem.innerHTML = `
+                        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                        <p>${repo.description || "No description available"}</p>
+                        <p class="repo-stars">⭐ ${repo.stargazers_count} Stars</p>
+                        <p class="repo-language">📝 Language: ${repo.language || "Not specified"}</p>
+                    `;
+                    repoList.appendChild(listItem);
+                });
+            }
+        }
+
+        fetch(`https://api.github.com/users/${username}/repos`)
+            .then(response => response.json())
+            .then(data => {
+                repositories = data;
+                displayRepos(repositories);
+            })
+            .catch(error => {
+                console.error("Error fetching repositories:", error);
+                document.getElementById('repoList').innerHTML = "<p>Failed to load repositories.</p>";
+            });
+    </script>
+
+</body>
+</html>
