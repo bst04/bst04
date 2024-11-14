@@ -25,10 +25,32 @@
             padding: 20px;
         }
 
+        /* Header Section */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .left-arrow-link {
+            font-size: 50px;  /* Increased size */
+            font-weight: bold; /* Bold text */
+            text-decoration: none;
+            color: #ff8c42; /* Color of the arrow */
+            padding: 10px;
+            transition: color 0.3s;
+            margin-right: 15px; /* Space between arrow and header */
+        }
+
+        .left-arrow-link:hover {
+            color: #ff7a29; /* Change color on hover */
+        }
+
         h1 {
             font-size: 3rem;
             text-align: center;
-            margin-top: 30px;
             color: #ff8c42;
         }
 
@@ -164,7 +186,12 @@
 </head>
 <body>
 
-    <h1>GitHub Repositories</h1>
+    <!-- Header Section -->
+    <div class="header-container">
+        <a href="index.html" class="left-arrow-link">&#8592;</a> <!-- You can change the URL here -->
+        <h1>GitHub Repositories</h1>
+    </div>
+
     <p>Explore my repositories on GitHub.</p>
 
     <!-- Search Bar -->
