@@ -1,71 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Little Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #34344a);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
 
-<body>
-    <!-- Main Container -->
-    <div class="main-container">
-        <!-- Header Section -->
-        <header class="fade-in">
-            <h1>👋 Hello, I'm <span class="highlighted-text">bst04</span></h1>
-            <p class="subtitle">Cybersecurity Enthusiast | Developer | Brand Ambassador of Kookaburra</p>
-        </header>
+.main-container {
+    max-width: 600px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+    width: 100%;
+}
 
-        <!-- Social Links Section -->
-        <nav class="social-links">
-            <ul>
-                <li><a href="https://github.com/brunoooost" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/bruno-salvatella-teichman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
+/* Header */
+header {
+    margin-bottom: 20px;
+}
 
-        <!-- About Me Section -->
-        <section class="about fade-in">
-            <h2>About Me</h2>
-            <p>A 17-year-old with a passion for cybersecurity and programming. I love diving into the intricacies of digital security and coding. You can find my projects on my GitHub.</p>
-            <a href="https://brunoooost.github.io/mygit-repositories/" class="btn1">Check My Repositories</a>
-        </section>
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
 
-        <!-- Tech Stack Section -->
-        <section class="tech-stack">
-            <h2>Tech Stack</h2>
-            <div class="tech-stack-grid">
-                <div class="tech-item" data-tooltip="HTML5">
-                    <a href="https://en.wikipedia.org/wiki/HTML5" class="fab fa-html5 tech-icon"></a>
-                  
-                    <span></span>
-                </div>
-                <div class="tech-item" data-tooltip="CSS3">
-                    <a href="https://en.wikipedia.org/wiki/CSS"class="fab fa-css3-alt tech-icon" ></a>
-                    <span></span> 
-                </div>
-                <div class="tech-item" data-tooltip="Python">
-                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="fab fa-python tech-icon"></a>
-                    <span></span>
-                </div>
-                <div class="tech-item" data-tooltip="C#">
-                    <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="fab fa-cuttlefish tech-icon"></a>
-                    <span></span>
-                </div>
-            </div>
-        </section>
+header .highlighted-text {
+    color: #ff8c42;
+}
 
-        <!-- Contact Section -->
-        <section class="contact fade-in">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out if you have any questions, collaborations, or just want to connect!</p>
-            <a href="mailto:brunoooost@proton.me" class="btn">Say Hello</a>
-        </section>
-    </div>
+header p.subtitle {
+    font-size: 1rem;
+    color: #b5b5b5;
+}
 
-    <script src="script.js"></script>
-</body>
+/* Social Links */
+.social-links {
+    margin: 15px 0 30px;
+}
 
-</html>
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: #ff8c42;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    text-decoration: underline;
+    text-decoration-color: #ff8c42;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #ff8c42;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn1 {
+    color: #ff8c42;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 900;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7a29;
+}
+
+/* Tech Stack */
+.tech-stack {
+    margin: 40px 0;
+}
+
+.tech-stack h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: #ff8c42;
+    margin-bottom: 15px;
+}
+
+.tech-stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tech-item {
+    text-align: center;
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+.tech-item span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    text-decoration: underline;
+    text-decoration-color: #ff8c42;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p.subtitle {
+        font-size: 0.9rem;
+    }
+
+    .social-links ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .tech-icon {
+        font-size: 2rem;
+      
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
