@@ -131,6 +131,7 @@ header p.subtitle {
 .tech-icon {
     font-size: 2.5rem;
     color: #ff8c42;
+    text-decoration: none;
 }
 
 .tech-item span {
@@ -192,6 +193,7 @@ header p.subtitle {
 
     .tech-icon {
         font-size: 2rem;
+      
     }
 
     .btn {
