@@ -12,6 +12,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 - Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
 - Doing payloads with BadUSB for Flipper Zero and Hak5.
 - Updating [**cybersources**](https://github.com/brunoooost/cybersources), a repo of cybersecurity resources.
+- Creating rooms on TryHackMe -> [flipperzerobadusbmastery](https://tryhackme.com/jr/flipperzerobadusbmastery)
 
 ## Repos 📁
 |Repository|Description|Language|
