@@ -22,6 +22,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |[RedProtect-website](https://github.com/brunoooost/info.redprotect)|The website of RedProtect Community (simple). |HTML & CSS|
 |[Cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
 |[mifare1k-maker](https://github.com/brunoooost/mifare1k-maker/tree/main)|Tool for transforming a url link to a ndef block for mifare clasic 1k card|Python|
+|[hitten-box](https://github.com/brunoooost/hitten-box)|Hitten Box is an indie survival game developed by bst04.|C#, Unity|
 
 ## Languages 💾
 [![My Skills](https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
