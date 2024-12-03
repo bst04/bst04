@@ -22,7 +22,7 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |[myrubberducky-shits](https://github.com/brunoooost/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[RedProtect-website](https://github.com/brunoooost/info.redprotect)|The website of RedProtect Community (simple). |HTML & CSS|
 |[Cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
-|[mifare1k-maker](https://github.com/brunoooost/mifare1k-maker/tree/main)|Tool for transforming a url link to a ndef block for mifare clasic 1k card|Python|
+|[url2ndef](https://github.com/brunoooost/url2ndef)|Conversor for URL to NDEF block. |Python|
 |[hitten-box](https://github.com/brunoooost/hitten-box)|Hitten Box is an indie survival game developed by bst04.|C#, Unity|
 
 ## Languages 💾
