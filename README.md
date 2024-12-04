@@ -22,8 +22,8 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 |[myrubberducky-shits](https://github.com/brunoooost/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[RedProtect-website](https://github.com/brunoooost/info.redprotect)|The website of RedProtect Community (simple). |HTML & CSS|
 |[Cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
-|[url2ndef](https://github.com/brunoooost/url2ndef)|Conversor for URL to NDEF block. |Python|
-|[url2nfc-fliper](https://github.com/brunoooost/url2nfc-fliper)|Conversor for URL to NFC flipe for Fliper Zero. |Python|
+|[URL 2 Ndef Block](https://github.com/brunoooost/url2ndef)|Conversor for URL to NDEF block. |Python|
+|[URL 2 NFC-Flipper File](https://github.com/brunoooost/url2nfc-fliper)|Generator URL to NFC flie for Fliper Zero. |Python|
 
 ## Languages 💾
 [![My Skills](https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
