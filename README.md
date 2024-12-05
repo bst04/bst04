@@ -9,11 +9,9 @@ Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student 
 - 🛡️ **RedProtect** - Cyber Community.
 
 ## Projects 🗂️
-- I developed some games using Unity [(**itch.io**)](https://brunoooost04.itch.io/). 
 - Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
 - Doing payloads with BadUSB for Flipper Zero and Hak5.
 - Updating [**cybersources**](https://github.com/brunoooost/cybersources), a repo of cybersecurity resources.
-- Creating rooms on **TryHackMe** - [**flipperzerobadusbmastery**](https://tryhackme.com/jr/flipperzerobadusbmastery)
 
 ## Repos 📁
 |Repository|Description|Language|
