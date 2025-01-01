@@ -18,7 +18,7 @@ Hello! I'm brunoooost (bst04), and welcome to my GitHub profile. I'm a passionat
 |--|-------------------|--|
 |[FlipZero Payloads](https://github.com/brunoooost/payloads_flipperZero)|A recopilation of some payloads for Flipper Zero with BadKB. |DuckyScript™ 1|
 |[myrubberducky-shits](https://github.com/brunoooost/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
-|[awesome-cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
+|cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
 
 ## Languages 💾
 [![My Skills](https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
