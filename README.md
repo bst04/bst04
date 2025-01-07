@@ -11,7 +11,7 @@ Hello! I'm brunoooost (bst04), and welcome to my GitHub profile. I'm a passionat
 ## Projects 🗂️
 - Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
 - Doing payloads with BadUSB for Flipper Zero and Hak5.
-- Updating [**cybersources**](https://github.com/brunoooost/cybersources), a repo of cybersecurity resources.
+- Updating [**cybersources**](https://github.com/brunoooost/cybersources) and [**AISources**](https://github.com/brunoooost/AIsources).
 
 ## Repos 📁
 |Repository|Description|Language|
@@ -19,6 +19,8 @@ Hello! I'm brunoooost (bst04), and welcome to my GitHub profile. I'm a passionat
 |[FlipZero Payloads](https://github.com/brunoooost/payloads_flipperZero)|A recopilation of some payloads for Flipper Zero with BadKB. |DuckyScript™ 1|
 |[myrubberducky-shits](https://github.com/brunoooost/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
+|[AISources](https://github.com/brunoooost/AISources)| Tools, Resources and Learning for AI.|README.md|
+
 
 ## Languages 💾
 [![My Skills](https://skillicons.dev/icons?i=py,html,css,cs,linux,windows,raspberrypi,kali,arduino)](https://skillicons.dev)
