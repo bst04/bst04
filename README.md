@@ -9,8 +9,7 @@ Hello! I'm brunoooost (bst04), and welcome to my GitHub profile. I'm a passionat
 - 🛠️ **Cybersources** - Cyber Community.
 
 ## Projects 🗂️
-- Working in **[RedProtect](https://info-redprotect.vercel.app)** Community. 
-- Doing payloads with BadUSB for Flipper Zero and Hak5.
+- Doing payloads for Flipper Zero and Rubber Ducky (Hak5).
 - Updating [**cybersources**](https://github.com/brunoooost/cybersources) and [**AISources**](https://github.com/brunoooost/AIsources).
 
 ## Repos 📁
