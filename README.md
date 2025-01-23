@@ -1,12 +1,15 @@
-# Hey there 👋, I'm brunoooost!
+# Hey there 👋, I'm bst04!
 ![](https://komarev.com/ghpvc/?username=brunoooost&label=views)
 
+```
 
-
-Hello! I'm bst04, and welcome to my GitHub profile. I'm a passionate IT student with a love for cybersecurity. This README is a little overview of who I am and what I do.
-- 🗣️ Im a **17-years-old** IT student from Spain.
-- 👨‍💻 Enthusiast about the cyber world - Pentesting Path.
-- 🛠️ **Cybersources** - Cyber Community.
+ _         _    ___  _  _              Welcome to my GitHub profile!
+| |__  ___| |_ / _ \| || |              
+| '_ \/ __| __| | | | || |_             - Im a 17-years-old IT student from Spain. 
+| |_) \__ | |_| |_| |__   _|            - Enthusiast about the cyber world - Pentesting Path.
+|_.__/|___/\__|\___/   |_|              - Cybersources - Cyber Community.
+                             
+```
 
 ## Projects 🗂️
 - Doing payloads for Flipper Zero and Rubber Ducky (Hak5).
