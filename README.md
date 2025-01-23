@@ -36,12 +36,12 @@
 <summary>📈 Stats</summary>
 <br>
  
-![](https://komarev.com/ghpvc/?username=brunoooost&label=views)
+![](https://komarev.com/ghpvc/?username=bst04&label=views)
 
-![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=brunoooost&theme=dark&show_icons=true&hide_border=false&count_private=false)
-![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=brunoooost&theme=vdark&hide_border=true)
-<img src="https://img.shields.io/github/stars/brunoooost?style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/brunoooost?style=for-the-badge"/>
+![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=bst04&theme=dark&show_icons=true&hide_border=false&count_private=false)
+![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=bst04&theme=vdark&hide_border=true)
+<img src="https://img.shields.io/github/stars/bst04?style=for-the-badge"/>
+<img src="https://img.shields.io/github/followers/bst04?style=for-the-badge"/>
 
 <br>
 
