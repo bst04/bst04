@@ -29,7 +29,7 @@
 ## Contact Me 💬
 |PGP|Data|
 |--|---------------------|
-|Signal|[brunoooost.04](https://signal.me/#eu/YiH6rZq86ipsfPShqXmtjw-kE6ATHrvE_sKfofhKNCuOry3YQEhHXInFqhMWLZqo)|
+|Signal|[bst44](https://signal.me/#eu/YiH6rZq86ipsfPShqXmtjw-kE6ATHrvE_sKfofhKNCuOry3YQEhHXInFqhMWLZqo)|
 |UID|brunoooost@proton.me|
 #
 <details>
