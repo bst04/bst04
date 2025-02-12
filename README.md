@@ -20,7 +20,7 @@
 |--|-------------------|--|
 |[FlipZero Payloads](https://github.com/brunoooost/payloads_flipperZero)|A recopilation of some payloads for Flipper Zero with BadKB. |DuckyScript™ 1|
 |[myrubberducky-shits](https://github.com/brunoooost/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
-|[cybersources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
+|[CyberSources](https://github.com/brunoooost/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
 
 
 ## Languages 💾
