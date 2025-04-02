@@ -14,6 +14,7 @@
 ## Projects 🗂️
 - Doing payloads for Flipper Zero and Rubber Ducky (Hak5).
 - Updating [**cybersources**](https://github.com/brunoooost/cybersources), the project with all cybersecurity tools and resources.
+- Owner of **[CyberSources](https://discord.gg/6s9W3EQApw)** and **[BCiberN](https://t.me/BCiberN)** communities.
 
 ## Repos 📁
 |Repository|Description|Language|
