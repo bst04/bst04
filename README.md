@@ -22,7 +22,6 @@
 |[myrubberducky-shits](https://github.com/bst04/myrubberducky-shits)|USB Rubber Ducky - Payloads recopilation. |DuckyScript™ 3|
 |[CyberSources](https://github.com/bst04/cybersources)| Tools, Resources and Learning for cybersecurity path.|README.md|
 |[tools-for-data-recovery](https://github.com/bst04/tools-for-data-recovery)|All tools for Data Recovery |README.md|
-|[Hack By Steps](https://github.com/bst04/HackBySteps)| Learn to hack everything step by step.|GitBook|
 |[Guias Para Servers](https://bst04s.gitbook.io/guias-para-servers) | Spanish Guides of diferent services on servers. |GitBook|
 
 
