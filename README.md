@@ -33,18 +33,14 @@
 |--|---------------------|
 |Signal|[bst44](https://signal.me/#eu/YiH6rZq86ipsfPShqXmtjw-kE6ATHrvE_sKfofhKNCuOry3YQEhHXInFqhMWLZqo)|
 |UID|brunoooost@proton.me|
-#
-<details>
-<summary>📈 Stats</summary>
-<br>
- 
+
+
+## Stats 📈 
+
 ![](https://komarev.com/ghpvc/?username=bst04&label=views)
 
 ![brunoooost's Stats](https://github-readme-stats.vercel.app/api?username=bst04&theme=dark&show_icons=true&hide_border=false&count_private=false)
-![brunoooost's Streak](https://github-readme-streak-stats.herokuapp.com/?user=bst04&theme=vdark&hide_border=true)
-<img src="https://img.shields.io/github/stars/bst04?style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/bst04?style=for-the-badge"/>
 
-<br>
+
 
 
