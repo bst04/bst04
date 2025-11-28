@@ -1,194 +1,232 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Bruno Salvatella</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-  :root{
-    --bg:#000000;
-    --text:#ffffff;
-    --muted:#b5b5b5;
-    --glass:rgba(255,255,255,0.05);
-    --glass-hover:rgba(255,255,255,0.12);
-    --radius:20px;
-    --blur:22px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
-    min-height:100vh;
-    background:radial-gradient(circle at 50% -30%, #4a3727 0%, #0a0a0a 60%);
-    color:var(--text);
-    padding:48px 20px;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-  }
-  .wrapper{width:100%;max-width:500px;text-align:center;animation:fadeIn .8s ease}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bruno Salvatella</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a;
+  --text:#ffffff;
+  --muted:#b5b5b5;
+  --glass:rgba(255,255,255,0.05);
+  --glass-hover:rgba(255,255,255,0.12);
+  --radius:22px;
+  --blur:24px;
+  --accent:#ff7f50;
+  --shadow:0 10px 40px rgba(255,255,255,0.05);
+}
 
-  @keyframes fadeIn {0%{opacity:0;transform:translateY(25px)} 100%{opacity:1;transform:translateY(0)}}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  color:var(--text);
+  padding:60px 20px;
+  background:radial-gradient(circle at 50% -30%, #4a3727 0%, #0a0a0a 60%);
+  animation:bgAnim 15s ease-in-out infinite alternate;
+}
 
-  .avatar{
-    width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 26px;
-    box-shadow:0 0 60px rgba(255,255,255,0.08);
-    transform:scale(1);transition:.3s;
-  }
-  .avatar:hover{transform:scale(1.03)}
-  .avatar img{width:100%;height:100%;object-fit:cover;filter:saturate(1.12) brightness(1.02)}
+@keyframes bgAnim {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
 
-  h1{font-size:32px;font-weight:800;margin-bottom:6px;letter-spacing:-0.5px}
-  .subtitle{font-size:15px;color:var(--muted);margin-bottom:30px}
+.wrapper{
+  width:100%;
+  max-width:500px;
+  text-align:center;
+  animation:fadeIn .8s ease;
+  backdrop-filter:blur(10px);
+}
+@keyframes fadeIn {0%{opacity:0;transform:translateY(25px)} 100%{opacity:1;transform:translateY(0)}}
 
-  .social-row{
-    display:flex;justify-content:center;gap:26px;margin-bottom:40px;
-  }
-  .social-row a{
-    width:46px;height:46px;display:flex;align-items:center;justify-content:center;
-    border-radius:50%;background:var(--glass);
-    backdrop-filter:blur(var(--blur));transition:.25s;
-  }
-  .social-row a:hover{background:var(--glass-hover);transform:translateY(-4px) scale(1.07)}
+.avatar{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 auto 30px;
+  box-shadow:0 12px 35px rgba(255,255,255,0.06), 0 0 60px rgba(255,255,255,0.03);
+  transition:.4s;
+}
+.avatar:hover{
+  transform:scale(1.1);
+  box-shadow:0 16px 50px rgba(255,255,255,0.12), 0 0 100px rgba(255,127,80,0.25);
+}
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:saturate(1.2) brightness(1.08);
+  transition:.4s;
+}
 
-  .links{display:flex;flex-direction:column;gap:22px;margin-top:10px}
-  .link-btn{
-    background:var(--glass);
-    padding:22px 20px;border-radius:var(--radius);
-    text-decoration:none;color:white;font-size:18px;font-weight:500;
-    backdrop-filter:blur(var(--blur));border:1px solid rgba(255,255,255,0.06);
-    transition:.28s;
-  }
-  .link-btn:hover{
-    background:var(--glass-hover);
-    border-color:rgba(255,255,255,0.14);
-    transform:translateY(-5px) scale(1.015);
-  }
+h1{
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:8px;
+  letter-spacing:-0.5px;
+  transition:.3s;
+  cursor:default;
+}
+h1:hover{
+  color:var(--accent);
+  transform:scale(1.03);
+}
 
-  .small-note{margin-top:34px;color:var(--muted);font-size:12px;opacity:0.55}
-  @media (max-width:600px){
-    body{
-      padding:32px 16px;
-      align-items:flex-start;
-    }
-    .wrapper{max-width:94%}
-    .avatar{width:130px;height:130px}
-    h1{font-size:27px}
-    .social-row a{width:42px;height:42px}
-    .link-btn{font-size:17px;padding:20px 18px}
-  }
+.subtitle{
+  font-size:16px;
+  color:var(--muted);
+  margin-bottom:40px;
+}
 
-  @media (min-width:1200px){
-    body{
-      padding-top:70px;
-    }
-    .wrapper{max-width:430px}
-    .avatar{width:160px;height:160px}
-    h1{font-size:34px}
-  }
+.social-row{
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  margin-bottom:45px;
+}
+.social-row a{
+  width:52px;
+  height:52px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--glass);
+  backdrop-filter:blur(var(--blur));
+  transition:.3s, transform .3s;
+}
+.social-row a:hover{
+  background:var(--glass-hover);
+  transform:translateY(-5px) scale(1.15);
+}
+.social-row a svg{
+  width:26px;
+  height:26px;
+  transition: transform .3s ease, filter .3s ease;
+}
+.social-row a:hover svg{
+  transform:scale(1.3);
+  filter: brightness(1.5);
+}
+
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  margin-top:10px;
+}
+.link-btn{
+  background:var(--glass);
+  padding:20px 22px;
+  border-radius:var(--radius);
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  font-weight:500;
+  backdrop-filter:blur(var(--blur));
+  border:1px solid rgba(255,255,255,0.06);
+  transition:.3s, transform .3s, box-shadow .3s;
+}
+.link-btn:hover{
+  background:var(--glass-hover);
+  border-color:rgba(255,255,255,0.14);
+  transform:translateY(-5px) scale(1.03);
+  box-shadow:0 10px 25px rgba(255,255,255,0.08);
+}
+
+.small-note{
+  margin-top:36px;
+  color:var(--muted);
+  font-size:12px;
+  opacity:0.55;
+}
+
+@media (max-width:600px){
+  body{padding:32px 16px;align-items:flex-start;}
+  .wrapper{max-width:94%;}
+  .avatar{width:130px;height:130px;}
+  h1{font-size:28px;}
+  .social-row a{width:44px;height:44px;}
+  .link-btn{font-size:16px;padding:18px 16px;}
+}
+@media (min-width:1200px){
+  body{padding-top:80px;}
+  .wrapper{max-width:450px;}
+  .avatar{width:170px;height:170px;}
+  h1{font-size:38px;}
+}
 </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div>
-      <div class="avatar">
-        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c6f2b?q=80&w=800&auto=format&fit=crop" alt="Foto de perfil">
-      </div>
-      <h1>Bruno Salvatella</h1>
-      <p class="subtitle">Founder of @CyberSources</p>
-
-<div class="social-row">
-  <!-- YouTube -->
-  <a href="#" aria-label="YouTube">
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="youtubeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#FF0000"/>
-          <stop offset="100%" stop-color="#FF7F7F"/>
-        </linearGradient>
-      </defs>
-      <polygon points="10,8 16,12 10,16" fill="url(#youtubeGrad)"/>
-      <rect x="2" y="4" width="20" height="16" rx="4" ry="4" fill="none" stroke="url(#youtubeGrad)" stroke-width="1.5"/>
-    </svg>
-  </a>
-
-  <!-- Instagram -->
-  <a href="#" aria-label="Instagram">
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="instaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#F58529"/>
-          <stop offset="50%" stop-color="#DD2A7B"/>
-          <stop offset="100%" stop-color="#8134AF"/>
-        </linearGradient>
-      </defs>
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="url(#instaGrad)" stroke-width="1.5"/>
-      <circle cx="12" cy="12" r="4" fill="url(#instaGrad)"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="url(#instaGrad)"/>
-    </svg>
-  </a>
-
-  <!-- Twitter -->
-  <a href="#" aria-label="Twitter">
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="twitterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#1DA1F2"/>
-          <stop offset="100%" stop-color="#0D8DD3"/>
-        </linearGradient>
-      </defs>
-      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0 1.97-2.48 9.05 9.05 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.86 4.12 12.84 12.84 0 0 1-9.3-4.71 4.51 4.51 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.57v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.14 9.07 9.07 0 0 1-5.6 1.93 12.81 12.81 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.85 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 3z" fill="url(#twitterGrad)"/>
-    </svg>
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="#" aria-label="LinkedIn">
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="linkedinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#0A66C2"/>
-          <stop offset="100%" stop-color="#004182"/>
-        </linearGradient>
-      </defs>
-      <rect x="2" y="2" width="20" height="20" rx="4" ry="4" fill="none" stroke="url(#linkedinGrad)" stroke-width="1.5"/>
-      <path d="M7 17V10h3v7H7zm1-8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 8v-4c0-2-2-1.85-2 0v4h-3v-7h3v1c.5-1 2-1.5 3-0.5 0.5 0.5 0.5 1 0.5 1.5V17h-1z" fill="url(#linkedinGrad)"/>
-    </svg>
-  </a>
-
-  <!-- Telegram -->
-  <a href="#" aria-label="Telegram">
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="telegramGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#37AEE2"/>
-          <stop offset="100%" stop-color="#1E96C8"/>
-        </linearGradient>
-      </defs>
-      <path d="M2 12l19-7-7 19-5-7-3 2z" fill="url(#telegramGrad)"/>
-    </svg>
-  </a>
-</div>
-
-<style>
-.social-row a svg {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-.social-row a:hover svg {
-  transform: scale(1.2);
-  filter: brightness(1.3);
-}
-</style>
-
-
-      <div class="links">
-        <a class="link-btn" href="#">My Spotlight | Favikon</a>
-        <a class="link-btn" href="#">CyberSources – 540+ Cybersecurity Tools for Ethical Hackers & Pentesters</a>
-        <a class="link-btn" href="#">ko‑fi – Donations and Sponsorships</a>
-        <a class="link-btn" href="#">Telegram Channel – Cybersecurity Resources and Tools</a>
-      </div>
-
-      <p class="small-note"> Cookie Preferences · Report · Privacy</p>
+<div class="wrapper">
+  <div>
+    <div class="avatar">
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c6f2b?q=80&w=800&auto=format&fit=crop" alt="Foto de perfil">
     </div>
+    <h1>Bruno Salvatella</h1>
+    <p class="subtitle">Founder of @CyberSources</p>
+
+    <div class="social-row">
+      <!-- YouTube -->
+      <a href="#" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="#FF0000">
+          <path d="M23.498 6.186a2.97 2.97 0 0 0-2.095-2.1C19.324 3.5 12 3.5 12 3.5s-7.324 0-9.403.586a2.97 2.97 0 0 0-2.095 2.1A30.06 30.06 0 0 0 0 12a30.06 30.06 0 0 0 .502 5.814 2.97 2.97 0 0 0 2.095 2.1C4.676 20.5 12 20.5 12 20.5s7.324 0 9.403-.586a2.97 2.97 0 0 0 2.095-2.1A30.06 30.06 0 0 0 24 12a30.06 30.06 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="url(#instaGrad)">
+          <defs>
+            <linearGradient id="instaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F58529"/>
+              <stop offset="50%" stop-color="#DD2A7B"/>
+              <stop offset="100%" stop-color="#8134AF"/>
+            </linearGradient>
+          </defs>
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.25 2a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" fill="#1DA1F2">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0 1.97-2.48 9.05 9.05 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.86 4.12A12.84 12.84 0 0 1 2 4.71a4.51 4.51 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.57v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.14 9.07 9.07 0 0 1-5.6 1.93 12.81 12.81 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.85 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 3z"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="#0A66C2">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.024-3.037-1.851-3.037-1.851 0-2.135 1.445-2.135 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.899 1.637-1.85 3.369-1.85 3.6 0 4.268 2.368 4.268 5.452v6.289zM5.337 7.433a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM6.816 20.452H3.86V9h2.956v11.452z"/>
+        </svg>
+      </a>
+
+      <!-- Telegram -->
+      <a href="#" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="#37AEE2">
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12 6.626 0 12-5.373 12-12 0-6.627-5.374-12-12-12zm5.518 7.428l-1.845 8.685c-.137.607-.496.757-1.007.471l-2.78-2.052-1.344 1.294c-.148.148-.273.273-.56.273l.201-2.825 5.144-4.648c.224-.201-.05-.312-.348-.111l-6.364 4.007-2.736-.855c-.595-.185-.606-.595.124-.879l10.707-4.13c.5-.191.938.111.777.871z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="links">
+      <a class="link-btn" href="#">My Spotlight | Favikon</a>
+      <a class="link-btn" href="#">CyberSources – 540+ Cybersecurity Tools for Ethical Hackers & Pentesters</a>
+      <a class="link-btn" href="#">ko‑fi – Donations and Sponsorships</a>
+      <a class="link-btn" href="#">Telegram Channel – Cybersecurity Resources and Tools</a>
+    </div>
+
+    <p class="small-note"> Cookie Preferences · Report · Privacy</p>
   </div>
+</div>
 </body>
 </html>
