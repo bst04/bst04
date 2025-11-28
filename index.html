@@ -1,71 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Little Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bruno Salvatella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+  :root{
+    --bg:#000000;
+    --text:#ffffff;
+    --muted:#b5b5b5;
+    --glass:rgba(255,255,255,0.05);
+    --glass-hover:rgba(255,255,255,0.12);
+    --radius:20px;
+    --blur:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    min-height:100vh;
+    background:radial-gradient(circle at 50% -30%, #4a3727 0%, #0a0a0a 60%);
+    color:var(--text);
+    padding:48px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+  }
+  .wrapper{width:100%;max-width:500px;text-align:center;animation:fadeIn .8s ease}
+
+  @keyframes fadeIn {0%{opacity:0;transform:translateY(25px)} 100%{opacity:1;transform:translateY(0)}}
+
+  .avatar{
+    width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 26px;
+    box-shadow:0 0 60px rgba(255,255,255,0.08);
+    transform:scale(1);transition:.3s;
+  }
+  .avatar:hover{transform:scale(1.03)}
+  .avatar img{width:100%;height:100%;object-fit:cover;filter:saturate(1.12) brightness(1.02)}
+
+  h1{font-size:32px;font-weight:800;margin-bottom:6px;letter-spacing:-0.5px}
+  .subtitle{font-size:15px;color:var(--muted);margin-bottom:30px}
+
+  .social-row{
+    display:flex;justify-content:center;gap:26px;margin-bottom:40px;
+  }
+  .social-row a{
+    width:46px;height:46px;display:flex;align-items:center;justify-content:center;
+    border-radius:50%;background:var(--glass);
+    backdrop-filter:blur(var(--blur));transition:.25s;
+  }
+  .social-row a:hover{background:var(--glass-hover);transform:translateY(-4px) scale(1.07)}
+
+  .links{display:flex;flex-direction:column;gap:22px;margin-top:10px}
+  .link-btn{
+    background:var(--glass);
+    padding:22px 20px;border-radius:var(--radius);
+    text-decoration:none;color:white;font-size:18px;font-weight:500;
+    backdrop-filter:blur(var(--blur));border:1px solid rgba(255,255,255,0.06);
+    transition:.28s;
+  }
+  .link-btn:hover{
+    background:var(--glass-hover);
+    border-color:rgba(255,255,255,0.14);
+    transform:translateY(-5px) scale(1.015);
+  }
+
+  .small-note{margin-top:34px;color:var(--muted);font-size:12px;opacity:0.55}
+  /* --- Responsive fixes for desktop & mobile --- */
+  @media (max-width:600px){
+    body{
+      padding:32px 16px;
+      align-items:flex-start;
+    }
+    .wrapper{max-width:94%}
+    .avatar{width:130px;height:130px}
+    h1{font-size:27px}
+    .social-row a{width:42px;height:42px}
+    .link-btn{font-size:17px;padding:20px 18px}
+  }
+
+  @media (min-width:1200px){
+    body{
+      padding-top:70px;
+    }
+    .wrapper{max-width:430px}
+    .avatar{width:160px;height:160px}
+    h1{font-size:34px}
+  }
+</style>
 </head>
-
 <body>
-    <!-- Main Container -->
-    <div class="main-container">
-        <!-- Header Section -->
-        <header class="fade-in">
-            <h1>👋 Hello, I'm <span class="highlighted-text">bst04</span></h1>
-            <p class="subtitle">Cybersecurity Enthusiast | Developer | Brand Ambassador of Kookaburra</p>
-        </header>
+  <div class="wrapper">
+    <div>
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c6f2b?q=80&w=800&auto=format&fit=crop" alt="Foto de perfil">
+      </div>
+      <h1>Bruno Salvatella</h1>
+      <p class="subtitle">Founder of @CyberSources</p>
 
-        <!-- Social Links Section -->
-        <nav class="social-links">
-            <ul>
-                <li><a href="https://github.com/brunoooost" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/bruno-salvatella-teichman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
+      <div class="social-row">
+        <a href="#"><svg width="20" height="20"><circle cx="10" cy="10" r="8"/></svg></a>
+        <a href="#"><svg width="20" height="20"><rect width="16" height="16" x="2" y="2"/></svg></a>
+        <a href="#"><svg width="20" height="20"><polygon points="10,2 18,18 2,18"/></svg></a>
+        <a href="#"><svg width="20" height="20"><path d="M4 4h12v12H4z"/></svg></a>
+        <a href="#"><svg width="20" height="20"><path d="M2 4l16 6-16 6z"/></svg></a>
+      </div>
 
-        <!-- About Me Section -->
-        <section class="about fade-in">
-            <h2>About Me</h2>
-            <p>A 17-year-old with a passion for cybersecurity and programming. I love diving into the intricacies of digital security and coding. You can find my projects on my GitHub.</p>
-            <a href="repos.html" class="btn1">Check My Repositories</a>
-        </section>
+      <div class="links">
+        <a class="link-btn" href="#">My Spotlight | Favikon</a>
+        <a class="link-btn" href="#">CyberSources – 540+ Cybersecurity Tools for Ethical Hackers & Pentesters</a>
+        <a class="link-btn" href="#">ko‑fi – Donations and Sponsorships</a>
+        <a class="link-btn" href="#">Telegram Channel – Cybersecurity Resources and Tools</a>
+      </div>
 
-        <!-- Tech Stack Section -->
-        <section class="tech-stack">
-            <h2>Tech Stack</h2>
-            <div class="tech-stack-grid">
-                <div class="tech-item" data-tooltip="HTML5">
-                    <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="fab fa-html5 tech-icon"></a>
-                  
-                    <span></span>
-                </div>
-                <div class="tech-item" data-tooltip="CSS3">
-                    <a href="https://en.wikipedia.org/wiki/CSS"target="_blank" class="fab fa-css3-alt tech-icon" ></a>
-                    <span></span> 
-                </div>
-                <div class="tech-item" data-tooltip="Python">
-                    <a href="https://en.wikipedia.org/wiki/Python" target="_blank" class="fab fa-python tech-icon"></a>
-                    <span></span>
-                </div>
-                <div class="tech-item" data-tooltip="C#">
-                    <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank" class="fab fa-cuttlefish tech-icon"></a>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact fade-in">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out if you have any questions, collaborations, or just want to connect!</p>
-            <a href="mailto:brunoooost@proton.me" class="btn">Say Hello</a>
-        </section>
+      <p class="small-note"> Cookie Preferences · Report · Privacy</p>
     </div>
-
-    <script src="script.js"></script>
+  </div>
 </body>
-
 </html>
